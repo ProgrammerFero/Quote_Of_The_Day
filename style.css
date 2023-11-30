@@ -1,0 +1,127 @@
+/* 
+Programmer Fero
+https://youtube.com/@ProgrammerFero
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #bbc6fa;
+}
+
+.quote-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 50%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:800px){
+    .quote-box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:493px){
+    .quote-box {
+        width: 90%;
+    }
+    .qu {
+        font-size: 28px;
+    }
+}
+
+
+.quote-box h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: "";
+    width: 105px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgba(23 , 124 , 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50% );
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before , .quote-box blockquote::after {
+    content: '"';
+}
+ 
+.quote-box span {
+    display: block;
+    margin-top: 15px;
+    float: right;
+    position: relative;
+}   
+
+.quote-box span::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: rgba(23 , 124 , 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box .new {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box .copyright {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button {
+    background-color: rgba(23 , 124 , 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgba(23 , 124 , 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.quote-box p {
+    display: block;
+    font-size: 14px;   
+}
+
+/* 
+Programmer Fero
+https://youtube.com/@ProgrammerFero
+*/
